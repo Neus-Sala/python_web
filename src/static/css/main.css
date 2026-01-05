@@ -1,6 +1,94 @@
-body {
-    background: #396afc;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2948ff, #396afc);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2948ff, #396afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+:root {
+    --green-dark: #1b4332;
+    --green-main: #2d6a4f;
+    --green-soft: #52b788;
+    --green-light: #e9f7ec;
+}
 
+/* Fondo general */
+body {
+    background-color: #fefffe;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--green-dark) !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link:hover {
+    color: var(--green-soft) !important;
+}
+
+/* Secciones */
+section {
+    padding: 4rem 0;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: var(--green-dark);
+}
+
+section h2 {
+    border-left: 6px solid var(--green-main);
+    padding-left: 15px;
+    margin-bottom: 2rem;
+}
+
+/* Bloques destacados */
+.highlight-box {
+    background-color: var(--green-light);
+    border-left: 6px solid var(--green-soft);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: var(--green-main);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--green-soft);
+}
+
+.subtitle {
+    color: #2d6a4f;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+/* Imágenes */
+img {
+    border-radius: 10px;
+}
+
+/* Separadores */
+hr {
+    border-top: 2px solid var(--green-soft);
+    opacity: 0.6;
+}
+
+/* Imágenes generales */
+.img-small {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+/* Imágenes medianas */
+.img-medium {
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem auto;
 }

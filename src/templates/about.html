@@ -1,6 +1,89 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<h1>About</h1>
-{% endblock %}
 
+<div class="container py-4">
+    <h1 class="mb-4">Anàlisi i conclusions</h1>
+
+    <p>
+        La modificació genètica aplicada a la conservació d'espècies presenta un gran
+        potencial, especialment en casos en què les estratègies tradicionals no han
+        estat suficients per frenar la desaparició d'organismes.
+    </p>
+
+    <p>
+        No obstant això, la intervenció directa sobre el material genètic pot generar
+        conseqüències imprevistes en els ecosistemes, com alteracions en les cadenes
+        tròfiques o la pèrdua de diversitat genètica.
+    </p>
+
+    <p>
+        Per aquest motiu, l'ús de l'edició genètica hauria d'aplicar-se de manera
+        controlada, complementant, i no substituint les estratègies de conservació
+        convencionals, com la protecció d'hàbitats i la reducció de l'impacte humà.
+    </p>
+
+    <p>
+        En conclusió, la modificació genètica pot ser una eina útil en la conservació
+        de la biodiversitat si s'utilitza amb criteris científics rigorosos,
+        regulació adequada i una reflexió ètica constant.
+    </p>
+</div>
+
+<hr class="my-5">
+
+<h2>Fonts i referències</h2>
+
+<ul class="list-group list-group-flush">
+    <li class="list-group-item">
+        Baltimore, D. et al. (2015). <em>A prudent path forward for genomic engineering</em>.
+        Science.
+    </li>
+    <li class="list-group-item">
+        Observatori de Bioètica (2025). Innovacions i noves perspectives de la tecnologia CRISPR.
+    </li>
+    <li class="list-group-item">
+        WWF. Biodiversitat i conservació d'espècies en perill d'extinció.
+    </li>
+</ul>
+
+<section>
+    <h2>Conclusions</h2>
+
+    <div class="highlight-box">
+        <p>
+            La modificació genètica es presenta com una eina amb un gran potencial per afrontar
+            problemes ambientals greus, especialment en la conservació d'espècies en perill
+            d'extinció. Les seves aplicacions poden aportar solucions innovadores davant
+            situacions que, amb mètodes tradicionals, serien difícils o impossibles de resoldre.
+        </p>
+        <img src="{{ url_for('static', filename='img/ethics.webp') }}"
+            class="img-small"
+            alt="Ètica sobre la modificació genètica">
+        <p>
+            Tot i això, aquesta tecnologia també planteja importants qüestions ètiques, socials
+            i ecològiques. Encara no es coneixen amb certesa totes les possibles conseqüències
+            a llarg termini que podria tenir la intervenció directa sobre el material genètic
+            dels éssers vius.
+        </p>
+
+        <p>
+            Per aquest motiu, es considera que, en l'actualitat, la modificació genètica hauria
+            d'utilitzar-se únicament en casos extrems i sota criteris molt estrictes, prioritzant
+            sempre la protecció dels ecosistemes. Entre els riscos existents, els impactes
+            ecològics són especialment rellevants, ja que una alteració genètica podria afectar
+            l'equilibri natural de les espècies i els seus hàbitats.
+        </p>
+        <img src="{{ url_for('static', filename='img/balance.png') }}"
+        class="img-small"
+        alt="Equilibri entre la progressió científica i l'ètica">
+        <p>
+            Finalment, és imprescindible que aquesta tecnologia estigui sotmesa a un control
+            rigorós, amb regulacions clares i supervisió científica constant, per evitar un ús
+            inadequat o irresponsable. Només a través d'una aplicació prudent i controlada es
+            podrà garantir que els beneficis superin els possibles riscos.
+        </p>
+    </div>
+</section>
+
+{% endblock %}

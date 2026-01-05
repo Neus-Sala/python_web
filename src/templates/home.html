@@ -1,11 +1,101 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<div class="container-fluid py-5 bg-light">
+
+<!-- HERO -->
+<section class="hero-section text-white text-center d-flex align-items-center">
     <div class="container">
-        <h1 class="display-5 fw-bold">Título</h1>
-        <p class="col-md-8 fs-4">Texto destacado como jumbotron.</p>
-        <button class="btn btn-primary btn-lg">Botón</button>
+        <h1 class="display-4 fw-bold">
+            Modificació genètica i conservació d'espècies
+        </h1>
+        <p class="subtitle">
+            Anàlisi de l'ús de l'edició genètica, especialment la tècnica CRISPR-Cas9,
+            com a possible eina per preservar la biodiversitat.
+        </p>
     </div>
+</section>
+
+<!-- INTRO -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Context i problemàtica</h2>
+        <p>
+            La pèrdua de biodiversitat és una de les principals problemàtiques ambientals
+            actuals. El canvi climàtic, la destrucció d'hàbitats i la introducció d'espècies
+            invasores han provocat un augment significatiu del nombre d'espècies en perill
+            d'extinció.
+        </p>
+        <p>
+            Davant d'aquesta situació, la biotecnologia ha desenvolupat noves eines que
+            podrien contribuir a la conservació d'espècies, entre les quals destaca
+            l'edició genètica mitjançant CRISPR-Cas9.
+        </p>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="{{ url_for('static', filename='img/crispr.jpg') }}"
+                     class="img-medium"
+                     alt="Edició genètica amb CRISPR">
+                <p class="text-muted mt-2 small">
+                    Representació esquemàtica del funcionament de la tecnologia CRISPR-Cas9.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h3>Què és CRISPR-Cas9?</h3>
+                <p>
+                    CRISPR-Cas9 és una eina d'edició genètica que permet tallar i modificar
+                    fragments concrets de DNA amb una gran precisió, facilitant la correcció
+                    o alteració de gens específics.
+                </p>
+                <div class="text-center my-5">
+    <a href="https://www.youtube.com/watch?v=2pp17E4E-O8" 
+       target="_blank" 
+       class="btn btn-primary btn-lg">
+        Vídeo explicatiu sobre CRISPR
+    </a>
 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BLOCS -->
+<section class="bg-light py-5">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <h5>Possibles aplicacions</h5>
+                <p>
+                    L'edició genètica podria utilitzar-se per augmentar la resistència
+                    a malalties, millorar l'adaptació al canvi climàtic o reduir la
+                    vulnerabilitat d'espècies amenaçades.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Tecnologia CRISPR-Cas9</h5>
+                <p>
+                    CRISPR-Cas9 permet modificar seqüències específiques de DNA de manera
+                    precisa, ràpida i relativament econòmica, fet que ha revolucionat
+                    el camp de la genètica.
+                </p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h5>Riscos i limitacions</h5>
+                <p>
+                    Tot i el seu potencial, aquesta tecnologia presenta riscos ecològics,
+                    ètics i socials, especialment pel que fa a possibles efectes imprevistos
+                    sobre els ecosistemes.
+                </p>
+            </div>
+            <img src="{{ url_for('static', filename='img/biodiversity.webp') }}"
+                class="img-medium"
+                alt="La importancia de la biodiversitat per l'equilibri dels ecosistemes naturals">
+        </div>
+    </div>
+</section>
+
 {% endblock %}
